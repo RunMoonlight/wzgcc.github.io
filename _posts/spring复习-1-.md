@@ -1,0 +1,10 @@
+spring是一个开源框架，为了解决企业应用开发而创建的现在已不止应用于企业级
+
+核心：是一个轻量级的控制反转（IOC）和一个面向切面（AOP）的容器框架
+        --从大小和开销来讲spring都是轻量级的
+        --通过控制反转来达到松耦合的目的
+        --提供了面向切面编程丰富的支持，允许通过分离应用的业务逻辑与系统级服务进行内聚性开发
+        --包含并管理bean
+        --将简单的组件配置,组合成复杂应用
+特点：简单，方便，快捷
+![image.png](http://upload-images.jianshu.io/upload_images/4653252-a837a6283dd73c4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
