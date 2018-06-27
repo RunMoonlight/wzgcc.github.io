@@ -1,10 +1,12 @@
 ---
-title: OkHttp访问https问题
+title: okhttp
 date: 2018-6-27 17:48:24
-categories: android
+categories: 
+- android
 - okhttp
-tags: - android
-	  - okhttp
+tags:
+- android
+- okhttp
 ---
 
 今天把应用升级了一下，原本的http:变成了https:
@@ -15,8 +17,11 @@ tags: - android
 　为了解决HTTP协议的这一缺陷，需要使用另一种协议：安全套接字层超文本传输协议HTTPS，为了数据传输的安全，HTTPS在HTTP的基础上加入了SSL协议，SSL依靠证书来验证服务器的身份，并为浏览器和服务器之间的通信加密。
 具体的连接：https://www.cnblogs.com/wqhwe/p/5407468.html
 相当于https在http的基础上增加了一层ssl协议的保护
+
 回归正题，我们来消灭bug
+
 1.修改手机时间
+
 2.
 ```
 public class TrustAllCerts implements X509TrustManager {
@@ -61,6 +66,7 @@ public class TrustAllHostnameVerifier implements HostnameVerifier {
         return ssfFactory;
     }
 ```	
+
 3. 
 适合于compile 'com.zhy:okhttputils:2.6.2' 
 在Application中加入
@@ -83,5 +89,7 @@ public class TrustAllHostnameVerifier implements HostnameVerifier {
     }
 ```
 其中方法1最简单也最安全。
+
 方法2 可以对单个http访问起作用
+
 方法3 对所使用的都起作用
