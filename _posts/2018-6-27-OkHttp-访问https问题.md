@@ -1,9 +1,10 @@
 ---
-title: OkHttp-访问https问题
+title: OkHttp访问https问题
 date: 2018-6-27 17:48:24
 categories: android
 - okhttp
-tags: android，okhttp
+tags: - android
+	  - okhttp
 ---
 
 今天把应用升级了一下，原本的http:变成了https:
